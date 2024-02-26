@@ -1,0 +1,129 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(146, 193, 222);
+    /*background: url('/stylecast/src/components/images/tower-in-forest-digital-art-3yzduk4b01ahu06q.jpg') no-repeat; */
+    background-size: cover;
+    background-position: center;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto; /* Adjust the width as needed */
+    text-align: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.hotbutton, .coldbutton, .changebutton, .clothingButtons button {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: black;
+    cursor: pointer;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+    will-change: transform;
+}
+
+.hotbutton:disabled, .coldbutton:disabled, .changebutton:disabled, .clothingButtons button:disabled {
+    pointer-events: none;
+}
+
+.hotbutton:hover, .coldbutton:hover, .changebutton:hover, .clothingButtons button:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.hotbutton:active, .coldbutton:active, .changebutton:active, .clothingButtons button:active {
+    box-shadow: none;
+    transform: translateY(0);
+    background-color: #1A1A1A;
+}
+
+
+.hotbutton:focus, .coldbutton:focus, .changebutton:focus {
+    box-shadow: none;
+    transform: translateY(0);
+    background-color: #1A1A1A;
+}
+
+.clothingButtons button:focus { 
+    box-shadow: none;
+    transform: translateY(0);
+    background-color: #1A1A1A;
+}
+
+
+.hotbutton { 
+    background-color: red;
+}
+
+.coldbutton { 
+    background-color: blue;
+}
+
+.highlight {
+    background-color: #1A1A1A; /* Choose your highlight color */
+}
+
+.clothingButtons { 
+    display: grid;
+    grid-template-areas: "button1 button2 button3"
+                         "button4 button5 button6";
+    grid-gap: 5px;
+}
+
+.divName { 
+    font-weight: bold;
+}
+
+img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+  /* Style for the image box container */
+.image-box {
+    max-width: 400px; /* Adjust the maximum width as needed */
+    margin: 20px auto; /* Center the box horizontally */
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+}
+
+  /* Style for the image inside the box */
+.image-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Style for the heading */
+.image-box h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}

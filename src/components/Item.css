@@ -1,0 +1,54 @@
+/* Update button styles for an aesthetic clothing website */
+.user-item a:hover,
+.user-item a:active {
+  background: #c9a37c; /* Neutral color for highlight on hover and active */
+}
+
+/* Flex container for user items representing clothing articles */
+.user-item {
+  display: inline-block;
+  //display: flex;
+}
+
+/* Container for user content */
+.user-content {
+  padding: 0rem; /* Add padding for better spacing */
+}
+
+/* User image styling with a circular border */
+.user-img {
+  width: 100px;
+  height: 100px;
+  margin-right: 1rem;
+  border-radius: 50%;
+  object-fit: cover; /* Ensure the image fills the circular container */
+}
+
+/* User information styles */
+.user-info h2 {
+  font-size: 1.8rem; /* Slightly reduced font size for a sleek look */
+  margin: 0 0 0.2rem 0;
+  font-weight: bold; /* Increased font weight for a bold look */
+  color: #7f684f; /* Neutral color for the clothing item name */
+}
+
+.user-info h3 {
+  margin: 0.2em 0;
+  font-size: 1.2rem; /* Adjusted font size for additional information */
+  color: #8f8f8f; /* Neutral color for additional information */
+}
+
+/* Text color changes on hover and active states */
+.user-item:hover h2,
+.user-item:active h2,
+.user-item:hover h3,
+.user-item:active h3 {
+  color: #292929; /* Darker text color on hover and active states */
+}
+
+/* Additional styling for user item info */
+.user-item__info h3 {
+  margin: 0;
+  font-size: 1rem; /* Adjusted font size for additional info in the item */
+  color: #555; /* Dark color for additional info */
+}
